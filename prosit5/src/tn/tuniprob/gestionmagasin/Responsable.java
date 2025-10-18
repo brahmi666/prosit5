@@ -21,4 +21,8 @@ public class Responsable extends Employe {
     public String toString() {
         return super.toString() + ", responsable et Prime: " + prime;
     }
+
+    public double getPrime() {
+        return this.prime;
+    }
 }

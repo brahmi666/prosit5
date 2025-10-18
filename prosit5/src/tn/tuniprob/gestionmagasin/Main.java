@@ -47,6 +47,14 @@ public class Main {
                     System.out.println(magasingenerale.tabemp[i].toString());
          }
 
+
+         System.out.println("Primes des responsables dans magasingenerale:");
+         for (Employe e : magasingenerale.getEmployes()) {
+             if (e instanceof Responsable) {
+                 Responsable r = (Responsable) e;
+                 System.out.println(r.nom + " : " + r.getPrime() + " DT");
+             }
+         }
          int caissiersCount = 0, vendeursCount = 0, responsablesCount = 0;
          for (int i = 0; i < magasingenerale.nbr_emp; i++) {
              Employe emp = magasingenerale.tabemp[i];
@@ -69,6 +77,7 @@ public class Main {
          System.out.println(" "+ emp1.equals(emp2));
          System.out.println(" "+ emp1.equals(emp3));
 
+         
     }
 }
 
@@ -124,5 +133,4 @@ public class Main {
     }
 
 }
-
 */
